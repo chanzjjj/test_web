@@ -1,0 +1,3 @@
+正在定位元素信息：定位方式->xpath,value值->//input[@type="text"]
+正在定位元素信息：定位方式->xpath,value值->//div[@class="zxcs-picker zxcs-input-control"]
+正在定位元素信息：定位方式->xpath,value值->//div[@class="picker-confirm"]

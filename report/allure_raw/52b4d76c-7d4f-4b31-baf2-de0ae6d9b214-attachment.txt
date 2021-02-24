@@ -1,0 +1,3 @@
+正在定位元素信息：定位方式->xpath,value值->//*[@id="root"]/div/div[3]/div[1]/ul/li[1]/div/input
+正在定位元素信息：定位方式->xpath,value值->//*[@id="root"]/div/div[3]/div[1]/ul/li[3]/div/div/span
+正在定位元素信息：定位方式->xpath,value值->//*[@id="root"]/div/div[3]/div[1]/ul/li[4]/div/div/span

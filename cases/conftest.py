@@ -1,8 +1,18 @@
 from selenium import webdriver
 import pytest
-from pages.user_login_page import UserLoginPage
 from selenium.webdriver.chrome.options import Options
 import platform
+from pages.BaZiHeHun import Bazihehun
+from pages.BaZiLiuNian import Baziliunian
+from pages.BaZiYinYuan import Baziyinyuan
+from pages.GeRenZhanXing import Gerenzhanxing
+from pages.LunHuiShu import Lunhuishu
+from pages.MaiLingLingYunCheng import Mailinglingyuncheng
+from pages.ShiNianDaYun import Shiniandayun
+from pages.ShiYeXiangPi import Shiyexiangpi
+from pages.SongShaoGuangYunCheng import Songshaoguangyuncheng
+from pages.YiShengCaiYun import Yishengcaiyun
+from pages.ZhanWeiZhongJingPi import Zhanweizhongjingpi
 
 
 # @pytest.fixture(scope="session", name="driver")
@@ -20,7 +30,6 @@ def browser():
     if platform.system() == 'Windows':
         # windows系统
         _driver = webdriver.Chrome()
-        _driver.maximize_window()
 
     else:
         # linux启动
@@ -38,12 +47,64 @@ def browser():
     # quit是退出浏览器
     _driver.quit()
 
+
+
 @pytest.fixture(scope="session")
 def base_url():
-    return "http://49.235.92.12:8200"
+    return "https://cs.lingbz.com"
+
 
 @pytest.fixture(scope="session")
+def bzhh(driver, base_url):
+    bzhh = Bazihehun(driver, base_url)
+    return bzhh
 
-def login_instance(driver, base_url):
-    login_ins = UserLoginPage(driver, base_url)
-    return login_ins
+@pytest.fixture(scope="session")
+def bzln(driver, base_url):
+    bzln = Baziliunian(driver, base_url)
+    return bzln
+
+@pytest.fixture(scope="session")
+def bzyy(driver, base_url):
+    bzyy = Baziyinyuan(driver, base_url)
+    return bzyy
+
+@pytest.fixture(scope="session")
+def grzx(driver, base_url):
+    grzx = Gerenzhanxing(driver, base_url)
+    return grzx
+
+@pytest.fixture(scope="session")
+def lhs(driver, base_url):
+    lhs = Lunhuishu(driver, base_url)
+    return lhs
+
+@pytest.fixture(scope="session")
+def mllyc(driver, base_url):
+    mllyc = Mailinglingyuncheng(driver, base_url)
+    return mllyc
+
+@pytest.fixture(scope="session")
+def sndy(driver, base_url):
+    sndy = Shiniandayun(driver, base_url)
+    return sndy
+
+@pytest.fixture(scope="session")
+def syxp(driver, base_url):
+    syxp = Shiyexiangpi(driver, base_url)
+    return syxp
+
+@pytest.fixture(scope="session")
+def ssgyc(driver, base_url):
+    ssgyc = Songshaoguangyuncheng(driver, base_url)
+    return ssgyc
+
+@pytest.fixture(scope="session")
+def yscy(driver, base_url):
+    yscy = Yishengcaiyun(driver, base_url)
+    return yscy
+
+@pytest.fixture(scope="session")
+def zwzjp(driver, base_url):
+    zwzjp = Zhanweizhongjingpi(driver, base_url)
+    return zwzjp

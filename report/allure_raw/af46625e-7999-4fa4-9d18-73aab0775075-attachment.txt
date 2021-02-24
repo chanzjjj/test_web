@@ -1,0 +1,8 @@
+正在定位元素信息：定位方式->xpath,value值->//*[@id="page-index"]/div[3]/div[2]/div[1]/div[1]/div/input
+正在定位元素信息：定位方式->xpath,value值->//*[@id="page-index"]/div[3]/div[2]/div[1]/div[1]/div/input
+正在定位元素信息：定位方式->xpath,value值->//*[@id="page-index"]/div[3]/div[2]/div[1]/div[3]/div
+正在定位元素信息：定位方式->xpath,value值->/html/body/div[3]/div[3]/div[1]/div[2]
+正在定位元素信息：定位方式->xpath,value值->/html/body/div[3]/div[2]/div[3]/div[2]/span
+正在定位元素信息：定位方式->xpath,value值->//*[@id="page-index"]/div[3]/div[2]/div[2]/div/img
+正在定位元素信息：定位方式->xpath,value值->//*[@id="pay"]/div[2]/div[2]/div[2]/div[2]/div
+正在定位元素信息：定位方式->xpath,value值->//*[@id="pay"]/div[2]/div[2]/div[2]/div[2]/ul/li[3]/div[2]/div
